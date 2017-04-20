@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <style>
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+             display: none;
+             position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+               padding: 12px 16px;
+               z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            
+            
+            
+            
+            body {
+                 background-color: #1eede9;
+                 }
+        </style>
+        <form name="first" action="First">
+            
+           <div class="dropdown">
+            <span>Info</span>
+                <div class="dropdown-content">
+              <a href="https://www.w3schools.com">Sign in</a>
+              <p>sign up</p>
+              <p>about us</p>
+              <p>contact us</p>
+             </div>
+            </div>
+            
+            <h1> Sigh in  </h1>
+            Username: <input type="text" name="user1" value="" /><br>
+            Password: <input type="password" name="pass" value="" /><br>
+            <input type="submit" value="Submit" name="submit" /><br>
+        </form>
+        <form name="newuser" action="NewUser">
+            <h1> If you first time user , please register  </h1> 
+            <br> Username : <input type="text" name="user1" value="" /><br>
+                 Password : <input type="password" name="pass1" value="" /><br>
+                 Confirm Password : <input type="password" name="pass2" value="" /><br>
+                 Email : <input type="text" name="email" value="" /><br>
+                 Zip : <input type="text" name="zip" value="" /><br>
+            <input type="submit" value="Register" name="register" />     
+        </form>
+    </body>
+</html>
